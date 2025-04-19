@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Ju Advocacia</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container-header">
+      <div class="logo-area">
+        <img id="logo" src="img/ju_logo.png" alt="logo">
+        <h1 id="titulo">Ju Advocacia</h1>
+      </div>
+      <nav>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Agendamentos</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+        <a href="#">Seus Processos</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="adv">
+    <img id="banner" src="img/Banner_Advocacia.jpg" alt="advocacia">
+    <div id="franqueado">
+      <h1>Precisa de apoio jurídico?</h1>
+      <p>Um escritorio que <span>entende e resolve</span> suas questões legais</p>
+      <div class="botoes">
+        <button class="btn-transparente">Saber mais</button>
+        <button class="btn-laranja">Falar com um advogado</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="areas-container">
+    <div class="area">
+      <i class="fas fa-balance-scale"></i>
+      <p>Direito Civil</p>
+    </div>
+    <div class="area">
+      <i class="fas fa-gavel"></i>
+      <p>Direito Penal</p>
+    </div>
+    <div class="area">
+      <i class="fas fa-user-tie"></i>
+      <p>Direito do Trabalho</p>
+    </div>
+    <div class="area">
+      <i class="fas fa-briefcase"></i>
+      <p>Direito Empresarial</p>
+    </div>
+    <div class="area">
+      <i class="fas fa-home"></i>
+      <p>Direito Imobiliário</p>
+    </div>
+    <div class="area">
+      <i class="fas fa-shield-alt"></i>
+      <p>Direito Previdenciário</p>
+    </div>
+  </div>
+
+  <section class="todos">
+    <h2 class="jud">Serviços Jurídicos</h2>
+
+    <div class="tabs">
+      <div class="tab" onclick="showTab('civil')">Direito Civil</div>
+      <div class="tab" onclick="showTab('trabalhista')">Trabalhista</div>
+      <div class="tab" onclick="showTab('penal')">Penal</div>
+    </div>
+
+
+    <div id="civil" class="card-container">
+      <div class="card">
+        <h3>Contratos</h3>
+        <p>Assessoria e elaboração de contratos civis personalizados.</p>
+        <a href="#" class="btn">Consultar</a>
+      </div>
+      <div class="card">
+        <h3>Família</h3>
+        <p>Divórcios, guarda, pensão e processos familiares.</p>
+        <a href="#" class="btn">Consultar</a>
+      </div>
+    </div>
+
+    <div id="trabalhista" class="card-container hidden">
+      <div class="card">
+        <h3>Revisão de FGTS</h3>
+        <p>Ação de revisão e recuperação de valores.</p>
+        <a href="#" class="btn">Consultar</a>
+      </div>
+      <div class="card">
+        <h3>Indenização</h3>
+        <p>Processos por demissão indevida ou assédio.</p>
+        <a href="#" class="btn">Consultar</a>
+      </div>
+    </div>
+
+    <div id="penal" class="card-container hidden">
+      <div class="card">
+        <h3>Defesa Criminal</h3>
+        <p>Atuação em processos criminais e tribunal do júri.</p>
+        <a href="#" class="btn">Consultar</a>
+      </div>
+      <div class="card">
+        <h3>Consultoria Penal</h3>
+        <p>Prevenção de riscos legais em empresas.</p>
+        <a href="#" class="btn">Consultar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="parceiros-section">
+    <div class="parceiros-card">
+      <img class="parceiros-card" src="img/walpaper1.jpg" alt="">
+      <div class="parceiros-content">
+        <h2>Parceiros</h2>
+        <p>Advogados especializados prontos para atuar em parceria no seu caso.</p>
+        <a href="#" class="btn-parceiros">CONFIRA</a>
+      </div>
+    </div>
+
+    <div class="parceiros-card">
+      <img class="parceiros-card" src="img/walpaper2.jpg" alt="">
+      <div class="parceiros-content">
+        <h2>Parceiros</h2>
+        <p>Conecte-se com profissionais do direito e amplie sua rede de apoio jurídico.</p>
+        <a href="#" class="btn-parceiros">CONFIRA</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="newsletter">
+      <div class="newsletter-text">
+        <h2>Inscreva-se na nossa newsletter</h2>
+        <p>Receba novidades, dicas jurídicas e conteúdos exclusivos direto no seu e-mail.</p>
+      </div>
+      <div class="newsletter-form">
+        <input type="text" placeholder="Digite seu nome">
+        <input type="email" placeholder="Digite seu e-mail">
+        <label><input type="checkbox"> Aceito os termos e condições</label>
+        <button>INSCREVER</button>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-about">
+        <img src="img/ju_logo.png" alt="Logo Ju Advocacia" width="120">
+        <p>Compromisso com a justiça e com você. Atendimento jurídico de excelência.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Nossa Missão</a></li>
+            <li><a href="#">Carreiras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ajuda</h4>
+          <ul>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Termos</h4>
+          <ul>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Projeto desenvolvido por <strong>Mileny Velho</strong> — Site fictício para fins educacionais.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
